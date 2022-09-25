@@ -15,20 +15,20 @@ public class Main02 {
 	//1. 입력받기
 	Scanner sc = new Scanner(System.in);
 	System.out.print("문자열을 입력하세요 : ");
-	String str = sc.next();
+	String str = sc.next(); // 입력받은 문자열
 	
+	String answer=""; //결과 문자열 
 	char chr; // 문자 읽어올 변수 
 	
 	for(int i=0; i<str.length(); i++) {
 		chr=str.charAt(i); // 문자열을 0번 배열부터 문자 읽어오기 .charAt() : 스트링에 인덱스로 접근 
 		if(chr>=65 && 90>=chr) { // 읽은 문자가 대문자일 때 
-			chr=Character.toLowerCase(chr); // 소문자로 변환 
-			System.out.print(chr); //출력  
+			answer+=Character.toLowerCase(chr); // 소문자로 변환 
 		}else { // 대문자가 아닐 때(소문자 일때)
-			chr=Character.toUpperCase(chr); // 대문자로 변환 
-			System.out.print(chr);// 출력 
+			answer+=Character.toUpperCase(chr); // 대문자로 변환 
 		}
 	}
+	System.out.print(answer);
 	
 	}
 	
