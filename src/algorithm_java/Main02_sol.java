@@ -7,7 +7,7 @@ class Main02_sol {
 		
 		String answer="";
 		
-		for(char x : str.toCharArray()) { // 문자를 배열로 바꿔주고 문자x로 배열 탐색  
+		for(char x : str.toCharArray()) { // for-each문 찾아보기 // 문자를 배열로 바꿔주고 문자x로 배열 탐색  
 			if(Character.isLowerCase(x)) {//문자가 소문자인지 확인 
 				answer+=Character.toUpperCase(x); //대문자로 저장 
 			}
